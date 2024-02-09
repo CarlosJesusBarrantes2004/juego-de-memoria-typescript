@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contenedor {
+  @apply h-screen container mx-auto flex items-center justify-center;
+}
+
+.juego {
+  @apply flex flex-col;
+}
+
+.juego__titulo {
+  @apply text-2xl font-extrabold text-center mb-5;
+}
+
+.juego__plantilla {
+  @apply grid grid-cols-6 gap-5;
+}
+
+.carta {
+  @apply border-2 border-black rounded-md p-3 bg-orange-500 w-40;
+}
+
+.carta:hover {
+  @apply cursor-pointer;
+}
+
+.carta__img {
+  @apply w-full object-cover;
+}
